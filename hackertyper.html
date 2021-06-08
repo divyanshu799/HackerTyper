@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hack Typer</title>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald">
+<style type="text/css">
+body {
+			background: #000;
+			margin: 0;
+			padding: 0;
+		}
+		* {
+			font-family: 'Oswald', sans-serif;
+		}
+		#hacktyper {
+			width: 100%;
+		}
+		#hacktyper span {
+			color: #0F0;
+			width: 10px;
+			text-align: center;
+			display: block;
+			float: left;
+		}
+
+</style>
+	
+</head>
+<body>
+<div id="hacktyper"></div>
+<script type="text/javascript">
+var x = 0;
+	var hacktyper = document.getElementById("hacktyper");
+	var chars = "#include<br> Welcome to My world!! +<br>+ Once you install Xnspy on a phone, the application works in hidden mode. You Think you are the smartest one in the world but this ain't true. struct(*np) sing namespace stdifstream file(file.txt)if (file.is_open())string linewhile (getline(file, line))";
+	var charLength = chars.length;
+	window.onload = function() {
+		the_i = setInterval(function(){
+			var el = document.createElement('span');
+			
+			var charText = document.createTextNode(chars[x++]);
+			if(x >= charLength) {
+				x = 0;
+			}else {
+				hacktyper.appendChild(el).appendChild(charText);
+                                
+			}
+		},100);
+	}
+</script>
+</body>
+</html>
+
+		
